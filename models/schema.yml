@@ -2,7 +2,22 @@ version: 2
 
 sources:
     - name: gz_raw_data
+      description: Greenweez raw data
       tables:
         - name: raw_gz_product
+          description: Greenweez product data
+          columns:
+            - name: products_id
+              tests:
+               - unique
         - name: raw_gz_ship
+          description: Greenweez shipping data
+          columns:
+            - name: orders_id
+              tests:
+                - unique
+            - name: shipping_fee
+            - name: logcost
+            - name: ship_cost
         - name: raw_gz_sales
+          description: Greenweez sales data

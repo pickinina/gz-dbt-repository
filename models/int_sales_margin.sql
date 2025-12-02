@@ -1,0 +1,14 @@
+
+select products_id, 
+    date_date, 
+    orders_id,
+    revenue,
+    quantity,
+    purchase_price,
+    ROUND(sales.quantity*product.purchase_price,2) AS purchase_cost,
+    ROUND(sales.revenue - sales.quantity*product_purchase_price,2) AS margin
+from {{"gz_raw_data.raw_gz_sales"}} as sales
+left join {{"gz_raw_data.raw_gz_product"}} as product
+    USING (products_id)
+
+
