@@ -10,4 +10,3 @@ select products_id,
 from {{"gz_raw_data.raw_gz_sales"}} as sales
 left join {{"gz_raw_data.raw_gz_product"}} as product
     on sales.pdt_id = product.products_id
-
