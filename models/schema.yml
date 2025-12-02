@@ -21,4 +21,15 @@ sources:
             - name: logcost
             - name: ship_cost
         - name: raw_gz_sales
+          columns:
+           - name: date_date
+             description: date of purchase
+           - name: orders_id
+             description: foreign key to ship
+           - name: pdt_id
+             description: foreign key to product
+           - name: revenue
+             description: the amount paid by the customer to purchase the product. revenue = quantity * selling_price
+           - name: quantity
+             description: the quantity of products purchased for a given order
           description: Greenweez sales data
