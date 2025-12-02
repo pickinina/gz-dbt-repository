@@ -8,7 +8,6 @@ sources:
           description: Greenweez product data
           columns:
             - name: products_id
-            - name: purchase_price
               tests:
                - unique
         - name: raw_gz_ship

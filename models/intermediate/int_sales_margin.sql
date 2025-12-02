@@ -3,7 +3,7 @@ select products_id,
     orders_id,
     revenue,
     quantity,
-    CAST(purchSE_price AS FLOAT64),
+    CAST(purchSE_price AS FLOAT64) AS purchase_price,
     ROUND(sales.quantity * CAST(product.purchSE_price AS FLOAT64),2) AS purchase_cost,
     ROUND(sales.revenue - sales.quantity * CAST(product.purchSE_price AS FLOAT64),2) AS margin
 from {{"gz_raw_data.raw_gz_sales"}} as sales
