@@ -32,3 +32,41 @@ sources:
            - name: quantity
              description: the quantity of products purchased for a given order
           description: Greenweez sales data
+        - name: raw_gz_adwords
+          columns:
+            - name: date_date
+            - name: paid_source
+            - name: campaign_key
+            - name: camPGN_name
+            - name: ads_cost
+            - name: impression
+            - name: click 
+        - name: raw_gz_bing
+          columns:
+            - name: date_date
+            - name: paid_source
+            - name: campaign_key
+            - name: camPGN_name
+            - name: ads_cost
+            - name: impression
+            - name: click
+
+        - name: raw_gz_criteo
+          columns:
+            - name: date_date
+            - name: paid_source
+            - name: campaign_key
+            - name: camPGN_name
+            - name: ads_cost
+            - name: impression
+            - name: click
+
+        - name: raw_gz_facebook
+          columns:  
+            - name: date_date
+            - name: paid_source
+            - name: campaign_key
+            - name: camPGN_name
+            - name: ads_cost
+            - name: impression
+            - name: click
